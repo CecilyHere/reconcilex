@@ -16,7 +16,19 @@ Reproduction commands are documented in the README and `scripts/verify_distribut
 
 ## GitHub validation status
 
-CI is configured for Python 3.11–3.14 on Ubuntu and Python 3.12 on Windows. Remote runs and release publication are pending at this checkpoint. Do not interpret configured jobs as passed checks.
+[GitHub Actions run #1](https://github.com/CecilyHere/reconcilex/actions/runs/39035176411) completed successfully on 2026-10-17 for implementation commit `1c42a4717caf3d9f5e57fba5ac7934e2b0ed21f7`.
+
+| Environment | Result |
+| --- | --- |
+| Ubuntu, Python 3.11 | Passed |
+| Ubuntu, Python 3.12 | Passed |
+| Ubuntu, Python 3.13 | Passed |
+| Ubuntu, Python 3.14 | Passed |
+| Windows, Python 3.12 | Passed |
+
+Each job built distributions, installed the wheel into a fresh virtual environment, checked dependencies, executed the 47-test suite (including 150 seeded scenarios), and ran the actual console demo. All 40 product files uploaded to the release branch were read back and compared with the local snapshot, including the screenshot blob.
+
+The source/runtime implementation has not changed since this run. This document records observed checks; consult the linked run and later repository checks for subsequent changes.
 
 ## Acceptance limits
 

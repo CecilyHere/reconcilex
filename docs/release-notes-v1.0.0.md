@@ -22,6 +22,10 @@ reconcilex demo --out reports/demo
 
 Open `reports/demo/report.html`. Expected demo: 3 accepted pairs, 4 review candidates, 5 remaining ledger rows, 6 remaining bank rows. See the README for configuration and the validation report for executed checks.
 
+## Validation
+
+47 behavioral tests, including 150 seeded candidate-oracle scenarios, passed locally and through GitHub Actions. Remote verification passed on Ubuntu Python 3.11–3.14 and Windows Python 3.12, including source/wheel builds, fresh wheel installation, dependency checks, installed-package tests, and the real console demo. See [validation details](https://github.com/CecilyHere/reconcilex/blob/main/docs/validation.md).
+
 ## Known limitations
 
 CSV-only, one-to-one, export-only. No FX conversion, PDF/XLSX extraction, split/batch settlements, persistent manual approvals, or automatic journal entries. A unique candidate is not proof of economic identity; users must understand the matching policy and inspect unresolved records. Validation uses synthetic datasets; real-world adoption is not yet established. Existing output directories are refused. Spreadsheet re-saving can change formula protections.
