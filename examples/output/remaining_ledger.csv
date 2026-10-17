@@ -1,0 +1,6 @@
+id,date,amount,currency,reference,description,source_row,duplicate_content,reason
+L003,2026-01-07,80.00,SGD,,Unreferenced receipt,4,False,review_candidates
+L004,2026-01-08,45.00,SGD,SALE-400,Receipt with fee difference,5,False,review_candidates
+L005,2026-01-09,-9.00,SGD,VEND-500,Ledger-only payment,6,False,no_eligible_candidate
+L007,2026-01-11,0.00,SGD,ZERO-700,Zero-value adjustment,8,False,review_candidates
+L008,2026-01-12,10.00,SGD,LEDGER-REF,Conflicting reference,9,False,no_eligible_candidate

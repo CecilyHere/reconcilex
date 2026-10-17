@@ -1,0 +1,12 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "matches.csv": "b4fa39846a263d264e183e81213ba7cd0487aee2765cd2a64482717c74d23caa",
+    "remaining_bank.csv": "8448f9a9f61752e910ecb456d6c9feb8a20a3f1a12244aff1f4972204a82642a",
+    "remaining_ledger.csv": "a0e273c6c418ba47d400ff38319f66d3c5de4fab3aca071412b3c14478eee591",
+    "report.html": "e8aa6ba40c11025000a08662f074e1936e9360828d4a31dde32d14d1501c406d",
+    "result.json": "3accc13c91f7f453402c5a639f3b68034a4c24e09d1cf7457a35e8d3153a198a",
+    "review_candidates.csv": "582754f5b174616b4b6420fe0bd16f67cbed2a546e12b8be243b4c77740e049e"
+  },
+  "note": "Checksums detect changes when compared with a trusted copy; they are not digital signatures."
+}

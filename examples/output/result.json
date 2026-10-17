@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "app_version": "1.0.0",
+  "created_at": "2026-10-17T12:46:48.910164+00:00",
+  "config": {
+    "ledger": {
+      "id": "id",
+      "date": "date",
+      "amount": "amount",
+      "currency": "currency",
+      "reference": "reference",
+      "description": "description",
+      "date_format": "%Y-%m-%d",
+      "delimiter": ",",
+      "encoding": "utf-8-sig",
+      "sign": 1
+    },
+    "bank": {
+      "id": "id",
+      "date": "date",
+      "amount": "amount",
+      "currency": "currency",
+      "reference": "reference",
+      "description": "description",
+      "date_format": "%Y-%m-%d",
+      "delimiter": ",",
+      "encoding": "utf-8-sig",
+      "sign": 1
+    },
+    "date_window_days": 3,
+    "amount_tolerance": "0.05",
+    "currency_precision": {
+      "SGD": 2,
+      "USD": 2,
+      "EUR": 2,
+      "GBP": 2,
+      "AUD": 2,
+      "CAD": 2,
+      "JPY": 0,
+      "KWD": 3
+    },
+    "max_rows": 50000,
+    "max_bytes": 10485760,
+    "max_candidates": 100000,
+    "max_comparisons": 2000000
+  },
+  "inputs": {
+    "ledger": {
+      "filename": "ledger.csv",
+      "sha256": "9e7556095f70c50d930a0ae5f36ff4f8afa9947cb8bc17ed683b1fe4c22453e4"
+    },
+    "bank": {
+      "filename": "bank.csv",
+      "sha256": "1d47198ce5ba620300c83540f8f013b8a37799b17a918c9cee669d610aa8ce41"
+    }
+  },
+  "summary": {
+    "ledger_rows": 8,
+    "bank_rows": 9,
+    "matched_pairs": 3,
+    "review_candidates": 4,
+    "remaining_ledger": 5,
+    "remaining_bank": 6,
+    "candidate_comparisons": 8
+  },
+  "totals": {
+    "SGD": {
+      "ledger_total": "200.50",
+      "bank_total": "284.48",
+      "input_difference": "-83.98",
+      "matched_difference": "0.00",
+      "remaining_difference": "-83.98",
+      "conservation_passed": true
+    },
+    "USD": {
+      "ledger_total": "150.00",
+      "bank_total": "150.00",
+      "input_difference": "0.00",
+      "matched_difference": "0.00",
+      "remaining_difference": "0.00",
+      "conservation_passed": true
+    }
+  },
+  "matches": [
+    {
+      "ledger_id": "L001",
+      "bank_id": "B001",
+      "currency": "SGD",
+      "ledger_date": "2026-01-05",
+      "bank_date": "2026-01-05",
+      "ledger_source_row": 2,
+      "bank_source_row": 2,
+      "ledger_reference": "SALE-100",
+      "bank_reference": "SALE-100",
+      "ledger_amount": "100.00",
+      "bank_amount": "100.00",
+      "difference": "0.00",
+      "date_gap_days": 0,
+      "rule": "reference_amount_date",
+      "reasons": []
+    },
+    {
+      "ledger_id": "L002",
+      "bank_id": "B002",
+      "currency": "SGD",
+      "ledger_date": "2026-01-06",
+      "bank_date": "2026-01-07",
+      "ledger_source_row": 3,
+      "bank_source_row": 3,
+      "ledger_reference": "VEND-200",
+      "bank_reference": "VEND-200",
+      "ledger_amount": "-25.50",
+      "bank_amount": "-25.50",
+      "difference": "0.00",
+      "date_gap_days": 1,
+      "rule": "reference_amount_date",
+      "reasons": []
+    },
+    {
+      "ledger_id": "L006",
+      "bank_id": "B006",
+      "currency": "USD",
+      "ledger_date": "2026-01-10",
+      "bank_date": "2026-01-10",
+      "ledger_source_row": 7,
+      "bank_source_row": 7,
+      "ledger_reference": "USD-600",
+      "bank_reference": "USD-600",
+      "ledger_amount": "150.00",
+      "bank_amount": "150.00",
+      "difference": "0.00",
+      "date_gap_days": 0,
+      "rule": "reference_amount_date",
+      "reasons": []
+    }
+  ],
+  "review_candidates": [
+    {
+      "ledger_id": "L003",
+      "bank_id": "B003",
+      "currency": "SGD",
+      "ledger_date": "2026-01-07",
+      "bank_date": "2026-01-07",
+      "ledger_source_row": 4,
+      "bank_source_row": 4,
+      "ledger_reference": "",
+      "bank_reference": "",
+      "ledger_amount": "80.00",
+      "bank_amount": "80.00",
+      "difference": "0.00",
+      "date_gap_days": 0,
+      "rule": "amount_date",
+      "reasons": [
+        "ambiguous_candidates"
+      ]
+    },
+    {
+      "ledger_id": "L003",
+      "bank_id": "B004",
+      "currency": "SGD",
+      "ledger_date": "2026-01-07",
+      "bank_date": "2026-01-07",
+      "ledger_source_row": 4,
+      "bank_source_row": 5,
+      "ledger_reference": "",
+      "bank_reference": "",
+      "ledger_amount": "80.00",
+      "bank_amount": "80.00",
+      "difference": "0.00",
+      "date_gap_days": 0,
+      "rule": "amount_date",
+      "reasons": [
+        "ambiguous_candidates"
+      ]
+    },
+    {
+      "ledger_id": "L004",
+      "bank_id": "B005",
+      "currency": "SGD",
+      "ledger_date": "2026-01-08",
+      "bank_date": "2026-01-08",
+      "ledger_source_row": 5,
+      "bank_source_row": 6,
+      "ledger_reference": "SALE-400",
+      "bank_reference": "SALE-400",
+      "ledger_amount": "45.00",
+      "bank_amount": "44.98",
+      "difference": "0.02",
+      "date_gap_days": 0,
+      "rule": "reference_amount_date",
+      "reasons": [
+        "amount_difference"
+      ]
+    },
+    {
+      "ledger_id": "L007",
+      "bank_id": "B007",
+      "currency": "SGD",
+      "ledger_date": "2026-01-11",
+      "bank_date": "2026-01-11",
+      "ledger_source_row": 8,
+      "bank_source_row": 8,
+      "ledger_reference": "ZERO-700",
+      "bank_reference": "ZERO-700",
+      "ledger_amount": "0.00",
+      "bank_amount": "0.00",
+      "difference": "0.00",
+      "date_gap_days": 0,
+      "rule": "reference_amount_date",
+      "reasons": [
+        "zero_amount"
+      ]
+    }
+  ],
+  "remaining_ledger": [
+    {
+      "id": "L003",
+      "date": "2026-01-07",
+      "amount": "80.00",
+      "currency": "SGD",
+      "reference": "",
+      "description": "Unreferenced receipt",
+      "source_row": 4,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "L004",
+      "date": "2026-01-08",
+      "amount": "45.00",
+      "currency": "SGD",
+      "reference": "SALE-400",
+      "description": "Receipt with fee difference",
+      "source_row": 5,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "L005",
+      "date": "2026-01-09",
+      "amount": "-9.00",
+      "currency": "SGD",
+      "reference": "VEND-500",
+      "description": "Ledger-only payment",
+      "source_row": 6,
+      "duplicate_content": false,
+      "reason": "no_eligible_candidate"
+    },
+    {
+      "id": "L007",
+      "date": "2026-01-11",
+      "amount": "0.00",
+      "currency": "SGD",
+      "reference": "ZERO-700",
+      "description": "Zero-value adjustment",
+      "source_row": 8,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "L008",
+      "date": "2026-01-12",
+      "amount": "10.00",
+      "currency": "SGD",
+      "reference": "LEDGER-REF",
+      "description": "Conflicting reference",
+      "source_row": 9,
+      "duplicate_content": false,
+      "reason": "no_eligible_candidate"
+    }
+  ],
+  "remaining_bank": [
+    {
+      "id": "B003",
+      "date": "2026-01-07",
+      "amount": "80.00",
+      "currency": "SGD",
+      "reference": "",
+      "description": "Possible first receipt",
+      "source_row": 4,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "B004",
+      "date": "2026-01-07",
+      "amount": "80.00",
+      "currency": "SGD",
+      "reference": "",
+      "description": "Possible second receipt",
+      "source_row": 5,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "B005",
+      "date": "2026-01-08",
+      "amount": "44.98",
+      "currency": "SGD",
+      "reference": "SALE-400",
+      "description": "Net receipt",
+      "source_row": 6,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "B007",
+      "date": "2026-01-11",
+      "amount": "0.00",
+      "currency": "SGD",
+      "reference": "ZERO-700",
+      "description": "Zero bank entry",
+      "source_row": 8,
+      "duplicate_content": false,
+      "reason": "review_candidates"
+    },
+    {
+      "id": "B008",
+      "date": "2026-01-12",
+      "amount": "10.00",
+      "currency": "SGD",
+      "reference": "BANK-REF",
+      "description": "Conflicting bank reference",
+      "source_row": 9,
+      "duplicate_content": false,
+      "reason": "no_eligible_candidate"
+    },
+    {
+      "id": "B009",
+      "date": "2026-01-15",
+      "amount": "-5.00",
+      "currency": "SGD",
+      "reference": "BANK-FEE",
+      "description": "Synthetic bank-only fee",
+      "source_row": 10,
+      "duplicate_content": false,
+      "reason": "no_eligible_candidate"
+    }
+  ],
+  "warnings": {
+    "ledger": [],
+    "bank": []
+  }
+}

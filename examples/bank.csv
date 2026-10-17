@@ -1,0 +1,10 @@
+id,date,amount,currency,reference,description
+B001,2026-01-05,100.00,SGD,SALE-100,Synthetic bank credit
+B002,2026-01-07,-25.50,SGD,VEND-200,Synthetic bank debit
+B003,2026-01-07,80.00,SGD,,Possible first receipt
+B004,2026-01-07,80.00,SGD,,Possible second receipt
+B005,2026-01-08,44.98,SGD,SALE-400,Net receipt
+B006,2026-01-10,150.00,USD,USD-600,Synthetic USD credit
+B007,2026-01-11,0.00,SGD,ZERO-700,Zero bank entry
+B008,2026-01-12,10.00,SGD,BANK-REF,Conflicting bank reference
+B009,2026-01-15,-5.00,SGD,BANK-FEE,Synthetic bank-only fee

@@ -1,0 +1,7 @@
+id,date,amount,currency,reference,description,source_row,duplicate_content,reason
+B003,2026-01-07,80.00,SGD,,Possible first receipt,4,False,review_candidates
+B004,2026-01-07,80.00,SGD,,Possible second receipt,5,False,review_candidates
+B005,2026-01-08,44.98,SGD,SALE-400,Net receipt,6,False,review_candidates
+B007,2026-01-11,0.00,SGD,ZERO-700,Zero bank entry,8,False,review_candidates
+B008,2026-01-12,10.00,SGD,BANK-REF,Conflicting bank reference,9,False,no_eligible_candidate
+B009,2026-01-15,-5.00,SGD,BANK-FEE,Synthetic bank-only fee,10,False,no_eligible_candidate
