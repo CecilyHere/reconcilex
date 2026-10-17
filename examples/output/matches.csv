@@ -1,0 +1,4 @@
+ledger_id,bank_id,currency,ledger_amount,bank_amount,difference,date_gap_days,ledger_date,bank_date,ledger_source_row,bank_source_row,ledger_reference,bank_reference,rule,reasons
+L001,B001,SGD,100.00,100.00,0.00,0,2026-01-05,2026-01-05,2,2,SALE-100,SALE-100,reference_amount_date,
+L002,B002,SGD,-25.50,-25.50,0.00,1,2026-01-06,2026-01-07,3,3,VEND-200,VEND-200,reference_amount_date,
+L006,B006,USD,150.00,150.00,0.00,0,2026-01-10,2026-01-10,7,7,USD-600,USD-600,reference_amount_date,

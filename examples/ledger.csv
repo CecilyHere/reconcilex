@@ -1,0 +1,9 @@
+id,date,amount,currency,reference,description
+L001,2026-01-05,100.00,SGD,SALE-100,Synthetic customer payment
+L002,2026-01-06,-25.50,SGD,VEND-200,Synthetic supplier payment
+L003,2026-01-07,80.00,SGD,,Unreferenced receipt
+L004,2026-01-08,45.00,SGD,SALE-400,Receipt with fee difference
+L005,2026-01-09,-9.00,SGD,VEND-500,Ledger-only payment
+L006,2026-01-10,150.00,USD,USD-600,Synthetic USD receipt
+L007,2026-01-11,0.00,SGD,ZERO-700,Zero-value adjustment
+L008,2026-01-12,10.00,SGD,LEDGER-REF,Conflicting reference
